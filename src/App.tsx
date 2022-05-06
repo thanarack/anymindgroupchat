@@ -4,7 +4,7 @@ import {
   AppContext,
   appContextValue,
   IAppContextValue,
-} from './context.js/AppContext';
+} from './context/AppContext';
 import './styles/app.scss';
 
 const initialAppContextState: IAppContextValue = {

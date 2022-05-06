@@ -1,6 +1,6 @@
 import { useMutation } from '@apollo/client';
 import React, { useEffect, useState } from 'react';
-import { IMessage } from '../../context.js/AppMessage';
+import { IMessage } from '../../context/AppMessage';
 import { PostMessage } from '../../query';
 import { IPostMessage } from '../../query/PostMessage';
 import setToScrollChat from '../../utils/setToScrollChat';

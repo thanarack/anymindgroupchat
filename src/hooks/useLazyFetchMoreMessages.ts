@@ -1,5 +1,5 @@
 import { useLazyQuery } from '@apollo/client';
-import { IMessage } from '../context.js/AppMessage';
+import { IMessage } from '../context/AppMessage';
 import FetchMoreMessages, {
   IFetchMoreMessages,
 } from '../query/FetchMoreMessages';

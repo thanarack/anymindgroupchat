@@ -1,4 +1,4 @@
-import { IMessage } from '../../context.js/AppMessage';
+import { IMessage } from '../../context/AppMessage';
 import ChatMessage from './ChatMessage';
 
 type IChatContainer = {

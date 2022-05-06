@@ -1,4 +1,4 @@
-import { IUsers } from '../context.js/AppContext';
+import { IUsers } from '../context/AppContext';
 
 type ISelectChannel = {
   data: Array<IUsers>;

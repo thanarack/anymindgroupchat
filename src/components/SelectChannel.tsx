@@ -1,4 +1,4 @@
-import { IChannel } from '../context.js/AppContext';
+import { IChannel } from '../context/AppContext';
 
 type ISelectChannel = {
   data: Array<IChannel>;

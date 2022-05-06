@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from 'react';
-import { AppContext } from '../../context.js/AppContext';
-import { appMessage, AppMessage, IMessage } from '../../context.js/AppMessage';
+import { AppContext } from '../../context/AppContext';
+import { appMessage, AppMessage, IMessage } from '../../context/AppMessage';
 import useLazyFetchLatestMessages from '../../hooks/useLazyFetchLatestMessages';
 import useLazyFetchMoreMessages from '../../hooks/useLazyFetchMoreMessages';
 import setToScrollChat from '../../utils/setToScrollChat';
