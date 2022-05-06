@@ -1,17 +1,24 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import SelectUser from '../components/SelectUser';
-import { IUsers } from '../context/AppContext';
 
-test('renders learn react link', () => {
-  const data = [];
+test('renders select user component', () => {
+  const data = [
+    { id: '1', username: 'a' },
+    { id: '2', username: 'b' },
+  ];
   const setSelectMock = jest.fn();
-  // const setStateMock = jest.fn();
-  // const useStateMock: any = (useState: any) => [useState, setStateMock];
-  // jest.spyOn(React, 'useState').mockImplementation(useStateMock);
 
   render(<SelectUser data={data} setSelect={setSelectMock} />);
-  // const linkElement = screen.getByText(/learn react/i);
-  // expect(linkElement).toBeInTheDocument();
+
+  fireEvent.change(screen.getByTestId('select-users'), {
+    target: { value: '2' },
+  });
+
+  const linkElement = screen.getByText(/1. Choose your user/i);
+
+  expect(linkElement).toBeInTheDocument();
+  expect(setSelectMock).toBeCalledTimes(1);
+  expect(setSelectMock).toBeCalledWith('2');
 });
