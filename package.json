@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.6.2",
+    "graphql": "^16.4.0",
+    "sass": "^1.51.0"
   }
 }
