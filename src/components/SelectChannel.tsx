@@ -16,6 +16,7 @@ const SelectChannel: React.FC<ISelectChannel> = (props) => {
         {data.map((value, id) => (
           <li
             key={id}
+            data-testid={`channel-id-${value.id}`}
             className={`channel${
               roomActive === value.id ? ' active-user' : null
             }`}
